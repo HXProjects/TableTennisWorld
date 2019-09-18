@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>@ViewBag.Title - Table Tennis World</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/styles.css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>   
+            <header class="header">               
+                
+                <h1><a href="/" class="header-title">Table Tennis World</a></h1>  
+                @Html.ActionLink("Home", "Index", "Home")
+                @Html.ActionLink("News", "GetAllNews", "News") 
+                @Html.ActionLink("Events", "GetAllEvents", "Events")  
+                @Html.ActionLink("Ranking", "GetRanking", "Ranking")
+
+                                   
+                @Html.Partial("_LoginPartial")
+                <div class="header_icon"></div>
+            </header>         
+    <main class="main">
+        <div class="main-content_wrapper center">
+            @RenderBody()
+
+        </div>
+        <div class="container body-content">
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Table Tennis World</p>
+            </footer>
+        </div>
+    </main>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,450 @@
+﻿body{
+  margin: 0;
+  padding: 0;
+  border: 0;    
+  
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+  vertical-align: baseline;    
+}
+a {
+  text-decoration: none;
+  color: #064d48;
+}
+a:hover{
+  color: rgba(251, 251, 251, 0.6);  
+  cursor: pointer;
+}
+
+body{
+  background: url(./Assets/Main-background.jpg) no-repeat center top fixed;
+  background-size:cover;
+}
+.background{
+    background: rgba(251, 251, 251, 0.6);
+}
+.comp-item{
+    background:rgba(251, 251, 251, 0.7);
+    border-left: solid 3px #cccccc;
+    border-right: solid 1px #cccccc;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:1rem;
+    margin-right:1rem;
+    width: 32%;
+    height: 15rem;
+}
+.comp-date{
+    font-size:1.5rem;
+    text-decoration:underline;
+}
+.comp-item:hover{
+background:rgba(251, 251, 251, 0.9);
+}
+.development-section{
+  display:none;
+  flex-wrap: wrap;
+}
+
+.development-section_box{
+  background: rgba(251, 251, 251, 0.8);  
+  border-bottom: solid 1px #b1b1b1;
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  overflow: hidden;
+  margin-top: 0.2rem;
+  padding: 2.5rem;
+  width: 30rem;
+  z-index: 0;
+}
+
+.development-section_box-image{
+  border-radius: 0.3rem;
+  height: 15rem;   
+  margin: 1rem;
+  overflow: hidden;
+  width: 28rem;
+}
+
+.development-section_box-content_container{
+  height: 10rem;
+}
+.events-item-card{
+    display:flex;
+    flex-direction:row;
+}
+.events-section{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.events-section-future,
+.events-section-finished,
+.events-section-activ{
+  background: rgba(251, 251, 251, 0.8);  
+  border-bottom: solid 1px #b1b1b1;
+  display: flex;  
+  overflow: hidden;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  width: 75rem;  
+}
+
+.events-section-future h3,
+.events-section-finished h3,
+.events-section-activ h3{
+  width:10rem;
+}
+
+
+.events-section-activ h3{
+  color:#9e0505;
+  font-weight: bold;
+}
+
+.events-section-future ul il,
+.events-section-finished ul il,
+.events-section-activ ul il {
+    display: list-item;   
+    text-decoration:dashed;
+ }
+
+
+
+.header{
+  background: rgba(0,7,71,1);
+  background: -moz-linear-gradient(left, rgba(7,0,56,1) 0%, rgba(247,253,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(7,0,56,1)), color-stop(100%, rgba(247,253,255,1)));
+  background: linear-gradient(to right, rgba(7,0,56,1) 0%, rgba(247,253,255,1) 100%);
+  color: #e9e8ec;
+  display: flex;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header_icon{
+  background: url('./Assets/table-tennis-solid.svg') no-repeat left top;
+  display: inline-block;
+  height: 2rem;  
+  width: 2rem;
+
+}
+
+.header_icon-stiga{
+  align-items: center;
+  background: url('./Assets/logo-stiga.svg') no-repeat left top;
+  background-size: 100%;
+  display: inline-block;
+  margin-top: 1rem;
+  height: 3rem;
+  width: 8rem;
+
+}
+.header-title,
+.header h1{
+  color: #ffffff;  
+  text-align: center;
+  text-shadow: #10003b;
+  text-transform: uppercase;
+  font-weight:900;
+}
+.link-to-event{
+    color:#000000;
+}
+
+.link-to-event:hover{   
+    color:#000000;
+    text-decoration: none;
+}
+.main{
+  margin-top: 5rem;  
+}
+
+.main-content_section{
+  display: flex;
+  flex-direction: row; 
+  flex-grow:1;
+  
+}
+
+.main-content_section_title{
+  cursor: pointer;
+  text-transform:uppercase;
+  text-shadow: 1px 1px 2px rgb(205, 255, 192);
+  color:#ffffff;
+  
+}
+
+.main-content_section_title:hover{
+  color: #b7b7ff;
+}
+
+.main-content_wrapper{
+  margin: 0 auto; 
+  position: relative;
+  width:1400px;
+}
+.news-section{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;  
+}
+
+.news-section_box{  
+  background: rgba(251, 251, 251, 0.8);  
+  border-bottom: solid 1px #b1b1b1;
+  display: flex;
+  height: 15rem;
+  overflow: hidden;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  width: 75rem;
+  z-index: 0;
+}
+
+.news-item{
+background: rgba(255, 245, 255, 0.7); 
+align-items:center; 
+  border-bottom: solid 1px #b1b1b1;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+
+  overflow: hidden;
+  margin:auto;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  width: 100rem;
+  z-index: 0;
+}
+
+.news-item_image{
+border-radius: 0.3rem;
+  height: 40rem;   
+  margin: 1rem;
+  overflow: hidden;
+  width: 70rem;
+}
+
+.news-section_box-image{
+  border-radius: 0.3rem;
+  height: 11rem;   
+  margin: 1rem;
+  overflow: hidden;
+  width: 22rem;
+}
+
+.news-section_box-content_container{
+  height: 12rem;
+}
+
+.news-section_box-content{   
+  overflow: hidden;    
+  padding: 5px;
+  position: relative;
+  text-overflow: ellipsis; 
+  height: 3.5rem;
+  width:50rem;   
+}
+
+.news-section_box::after {
+   content:"...";
+   color:#000000;
+   top: 7.4rem;
+   right:1.5rem;
+   position: relative;
+   
+}
+.news-section_box::after:hover{
+color:#d5ff00;
+}
+
+.table-tennis_icon{
+  background: url('./Assets/table-tennis-solid.svg') no-repeat left top;
+  display: inline-block;
+  margin:4rem 2rem 0rem 0rem;
+  height: 4rem;  
+  width: 4rem;
+
+}
+
+.players-section-box{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.first-player{
+    color:#fa0404;
+}
+.players-section{
+  display: flex;
+  flex-direction:column;  
+  overflow: hidden;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  width: 70rem;
+}
+
+.row-ranking{
+display: flex;
+justify-content: space-around;
+}
+.row-ranking:nth-child(2n){
+    background:#b1b1b1;
+}
+.column-ranking{
+    width:32%;
+    
+    
+}
+.active-section-title{  
+  
+background: rgba(251, 251, 251, 0.4);
+color:#fffffa; 
+text-transform:uppercase;
+
+}
+
+.title-container{
+width: 12rem;
+border-right:solid 2px rgba(251, 251, 251, 0.1);
+
+
+}
+.title-container:hover{
+
+border-bottom:solid 2px #c6ff00;
+}
+
+@media (max-width: 1400px){
+  .main-content_wrapper{
+    width:1200px;
+  }
+  .events-section,
+  .news-section,
+  .development-section,
+  .players-section{
+    width:900px;
+  }
+
+  .events-section-future,
+  .events-section-finished,
+  .events-section-activ,
+  .news-section_box{
+    width: 68rem;
+  }
+  .development-section_box{
+    margin: 0.5rem;
+    padding: 1.5rem;
+    width: 25rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .development-section_box{
+    padding: 1,5rem;
+    width: 14rem;
+  }
+
+  .development-section_box-image{
+    height: 10rem;
+    width: 14rem;
+    margin: 0;
+  }
+
+  .events-section-future,
+  .events-section-finished,
+  .events-section-activ{
+    width: 50rem;
+  }
+  .events-section,
+  .news-section{
+    width: 800px;
+  }
+  .main-content_wrapper{    
+    width:800px;
+  }
+  .main-content_section_title{
+    width:12rem;
+  }
+  .main-content_section_title h2{
+    font-size: 1rem;
+  }
+  .news-section_box{
+    width: 48rem;
+  }
+  .news-section_box-content{
+    width: 32rem;
+  }
+  .news-section_box-image{
+    height: 10rem;
+    width: 15rem;
+
+  }
+}
+
+@media (max-width: 800px){
+  .development-section_box{
+    padding: 1rem;
+    width: 14rem;
+  }
+
+  .development-section_box-image{
+    height: 15rem;
+    width: 25rem;
+    margin: 0;
+  }
+
+  .events-section-future,
+  .events-section-finished,
+  .events-section-activ{
+    width: 34rem;
+  }
+
+  .events-section,
+  .news-section{
+    width: 560px;
+  }
+  .main-content_wrapper{    
+    width: 560px;
+  }
+  .main-content_section_title{
+    width:12rem;
+  }
+  .main-content_section_title h2{
+    font-size: 1rem;
+  }
+  .news-section_box{
+    width: 35rem;
+  }
+  .news-section_box-content{
+    width: 30rem;
+  }
+  .news-section_box-image{
+    height: 6rem;
+    width: 10rem;
+  }
+
+}
+@media (max-width: 800px){
+  .events-section-activ,
+  .events-section-finished,
+  .events-section-future,
+  .news-section_box{
+    flex-direction: column;
+  }
+  .news-section_box-image{
+      display:none;
+  }
+}

@@ -1,0 +1,96 @@
+﻿@model IEnumerable<TTW.Models.Events>
+
+<h2 class="active-section-title">Actual:</h2>
+<div class="container-fluid section__body background">
+    <div class="row">
+        <div class="events-items-container">
+            @foreach (var item in Model)
+            {
+                if (item.Type == "Active")
+                {
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 comp-list comp-item">
+                        <a class="link-to-event">
+                            <div class="events-item-card">
+                                <div class="comp-logo">
+                                    <div class="table-tennis_icon"></div>
+                                </div>
+                                <div class="comp-name-info">
+                                    <div class="comp-date">
+                                        @Html.DisplayFor(modelItem => item.Dates)
+                                    </div>
+                                    <div class="comp-name">
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+<h2 class="active-section-title">Coming soon:</h2>
+<div class="container-fluid section__body background">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            if (item.Type == "Future")
+            {
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 comp-list comp-item">
+                    <a class="link-to-event">
+                        <div class="events-item-card">
+                            <div class="comp-logo">
+                                <div class="table-tennis_icon"></div>
+                            </div>
+                            <div class="comp-name-info">
+                                <div class="comp-date">
+                                    @Html.DisplayFor(modelItem => item.Dates)
+                                </div>
+                                <div class="comp-name">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+
+    </div>
+</div>
+
+<h2 class="active-section-title">Finished:</h2>
+<div class="container-fluid section__body background">
+    <div class="row">
+
+        @foreach (var item in Model)
+            {
+                if (item.Type == "Finished")
+                {
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 comp-list comp-item">
+                    <a class="link-to-event">
+                        <div class="events-item-card">
+                            <div class="comp-logo">
+                                <div class="table-tennis_icon"></div>
+                            </div>
+                            <div class="comp-name-info">
+                                <div class="comp-date">
+                                    @Html.DisplayFor(modelItem => item.Dates)
+                                </div>
+                                <div class="comp-name">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TTW.Models.News>
+
+@foreach (var item in Model) {
+<div class="news-item"> 
+       
+        <h2 class="news-section_box-title">@Html.DisplayFor(modelItem => item.Title)</h2>
+        <h6 class="news-section_box-date">@Html.DisplayFor(modelItem => item.Date)</h6>
+        <img src=@Html.DisplayFor(modelItem => item.ImageLink) class="news-item_image" alt="...">    
+            @Html.DisplayFor(modelItem => item.Content)
+    
+</div>
+}
+
+
