@@ -23,8 +23,9 @@
         <div class="header_icon"></div>
         <div class="header_icon-stiga"></div>
     </header>
+    
     <main class="main">
-        <div id="loading" style="display:none">loading...</div>
+        <div id="loading" style="display:none"></div>  
         
         <div class="main-content_wrapper">
             
@@ -32,7 +33,9 @@
                 <div class="title-container">
                     <h3 class="main-content_section_title" data-component="news-title">News</h3>
                 </div>
+                
                 <div class="news-section" data-component="news-section-container"> 
+                    
                 </div> 
                 
             </section>
@@ -59,17 +62,17 @@
             
                </div>
             </main>
-    <script src="~/Scripts/jquery-1.10.2.min.js")"></script>
-   
+    <script src="~/Scripts/jquery-1.10.2.min.js")"></script>  
 
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
-    <script src="~/Scripts/AppScripts/getNewsClickHandler.js"></script>
-    <script src="~/Scripts/AppScripts/getEventsClictHandler.js"></script>
-    <script src="~/Scripts/AppScripts/getRankingClickHandler.js"></script>
-
+    
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/AppScripts/getRankingClickHandler.js");
+    @Scripts.Render("~/Scripts/AppScripts/getEventsClictHandler.js");
+    @Scripts.Render("~/Scripts/AppScripts/getNewsClickHandler.js");
+
 </body>
 </html>

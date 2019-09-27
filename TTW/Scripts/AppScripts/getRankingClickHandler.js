@@ -10,7 +10,7 @@ $(function () {
     $(rankingSectionTitle).click(function () {
         console.log('click');
         if (!isPlayerSectionOpen) {
-           
+            $("#loading").show();
             $.getJSON("/Ranking/GetJsonRanking", null, getRanking);
         }
         else {
@@ -20,9 +20,7 @@ $(function () {
 });
 
 function getRanking(ranking) {
-    
-    
-
+    $("#loading").hide();
     const RankingContainer = document.createElement('div');
     RankingContainer.classList.add('players-section-box', 'background');    
     const Firstrow = document.createElement('div');

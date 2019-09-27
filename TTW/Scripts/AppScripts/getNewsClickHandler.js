@@ -5,7 +5,7 @@ const newsSectCont = document.querySelector(newsSectionDataComp);
 let isNewsSectionOpen = false;
 
 $(function () {    
-    $('.carousel').carousel();
+    
     $(newsSectionTitle).click(function () {
         if (!isNewsSectionOpen) {
             $("#loading").show();

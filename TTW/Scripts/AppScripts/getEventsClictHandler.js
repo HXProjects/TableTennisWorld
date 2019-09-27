@@ -8,9 +8,10 @@ let isEventsSectionOpen = false;
 $(function () {
 
     $(eventsSectionTitle).click(function () {
-        console.log('click');
+        
         if (!isEventsSectionOpen) {
-            console.log('inrequest');
+            console.log("try to load")
+            $("#loading").show();
             $.getJSON("/Events/GetJsonAllEvents", null, getEvents);
         }
         else {
@@ -20,9 +21,6 @@ $(function () {
 });
 
 function getEvents(events) {
-    console.log('drawing');
-    console.log(events);
-
         const futureCont = document.createElement('div');
         futureCont.classList.add('events-section-future');
         const titleFutureCont = document.createElement('h3');
@@ -43,7 +41,7 @@ function getEvents(events) {
         activeCont.appendChild(titleActiveCont);
         finishedCont.appendChild(titleFinishedCont);
 
-        
+        $("#loading").hide();
     $.each(events, function () {           
         
         const il = document.createElement('il');
