@@ -16,5 +16,10 @@ namespace BusinessLogic
         {
             return new RankingService();
         }
+
+        public static IUserManagerService GetUserManagerService()
+        {
+            return new UserManagerService();
+        }
     }
 }
